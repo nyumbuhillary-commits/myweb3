@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillary N.Nyumbu - My Student Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Hillary N.Nyumbu - My Student Website</h1>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#hobbies">My Hobbies</a>
+    <a href="#learning-plan">My Learning Plan</a>
+    <a href="#photos">My Photos</a>
+    <a href="#media">My Media</a>
+    <a href="#contact">Contact</a>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">Learn Web Development</a>
+</nav>
+
+<main>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>
+             My name is Hillary N.Nyumbu, and I am a student at Mulungushi University.
+            I have a strong interest in web design and how different web tools work together. 
+            I am taking this course to build my knowledge in HTML and CSS and to get better 
+            at designing my own webpages. I want to gain hands on skills that will help me 
+            my studies and my future projects.
+        </p>
+        <p>
+            My aim is to keep learning and practicing web development so i can build websites
+            that are simple, helpful, goodlooking, and userfriendly.
+        </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Reading novels</li>
+            <li>Exploring Technology</li>
+            <li>playing chess</li>
+        </ul>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+        <h2>My Learning Plan</h2>
+        <p>
+            I plan to improve my web development skills through regular practice,
+            learning new concepts, and creating small projects.
+        </p>
+        <ol>
+            <li>Practise HTML and learn how to structure webpages correctly.</li>
+            <li>Learn CSS and practise creating attractive and responsive webpages.</li>
+            <li>Build small web projects to improve my practical skills.</li>
+        </ol>
+
+        <table>
+            <caption>My Weekly Web Learning Plan</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Practise creating webpage structure and headings.</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS</td>
+                    <td>Practise styling text, sections, and navigation.</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Web Projects</td>
+                    <td>Build and test a small webpage.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="photos" class="content-section">
+        <h2>My Photos</h2>
+        <p>Here are some photos related to my hobbies and interests.</p>
+        <div class="gallery">
+            <figure>
+                <img src="images/image-1.jpg" alt="Photo related to listening to music">
+                <figcaption>Exploring Technology</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image-2.jpg" alt="Photo related to exploring technology">
+                <figcaption>Reading</figcaption>
+            </figure>
+            <figure>
+                <img src="images/image-3.jpg" alt="Photo related to reading">
+                <figcaption>Music</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="media" class="content-section">
+        <h2>My Media</h2>
+
+        <h3>My Introduction Video</h3>
+        <video controls>
+            <source src="videos/video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <p>This video introduces me, my programme, and one web development skill I hope to learn.</p>
+        <p>
+            <strong>Video summary:</strong>
+            In this video, I introduce myself, talk about my programme, and explain one
+            web development skill I want to improve.
+        </p>
+
+        <h3>My Audio</h3>
+
+        <audio controls preload="metadata" style="width: 100%;height: 54;">
+            <source src="videos/voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>This audio recording talks about one of my hobbies and why I enjoy it.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p><strong>Name:</strong> Hillary N. Nyumbu</p>
+        <p><strong>Student Number:</strong> 202503347</p>
+        <p><strong>Phone:</strong> 0975740877 / 0965880048</p>
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:nyumbuhillary@gmail.com">nyumbuhillary@gmail.com</a>
+        </p>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="topic">Topic:</label>
+            <input type="text" id="topic" name="topic">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>This form is included for demonstration purposes and does not send information to a real server.</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Hillary N. nyumbu. All rights reserved.</p>
+    <p>Mulungushi University - Web Technologies</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hillary N. nyumbu - My Student Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <h1>Hillary N. Nyumbu - My Student Website</h1>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">🌙 Dark Mode</button>
+    </div>
+
+    <nav>
+        <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
+        <div id="main-nav">
+            <a href="#about">About Me</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#learning-plan">My Learning Plan</a>
+            <a href="#skills">My Skills</a>
+            <a href="#photos">My Photos</a>
+            <a href="#media">My Media</a>
+            <a href="#contact">Contact</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">Learn Web Development</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hi, I'm Hillary N.Nyumbu</h2>
+    <p>Student at Mulungushi University, learning to build clear, useful websites with HTML, CSS and JavaScript.</p>
+    <a href="#skills" class="btn btn-primary">View My Skills</a>
+</section>
+
+<main>
+    <section id="about" class="content-section">
+        <h2>About Me</h2>
+        <p>
+            My name is Hillary N.Nyumbu, and I am a student at Mulungushi University.
+            I have a strong interest in web design and how different web tools work together. 
+            I am taking this course to build my knowledge in HTML and CSS and to get better 
+            at designing my own webpages. I want to gain hands on skills that will help me 
+            my studies and my future projects.
+        </p>
+        <p>
+            My aim is to keep learning and practicing web development so i can build websites
+            that are simple, helpful, goodlooking, and userfriendly.
+        </p>
+    </section>
+
+    <section id="hobbies" class="content-section">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>Reading novels</li>
+            <li>Exploring Technology</li>
+            <li>playing chess</li>
+        </ul>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+        <h2>My Learning Plan</h2>
+        <p>
+            I plan to improve my web development skills through regular practice,
+            learning new concepts, and creating small projects.
+        </p>
+        <ol>
+            <li>Practise HTML and learn how to structure webpages correctly.</li>
+            <li>Learn CSS and practise creating attractive and responsive webpages.</li>
+            <li>Build small web projects to improve my practical skills.</li>
+        </ol>
+
+        <table>
+            <caption>My Weekly Web Learning Plan</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Practise creating webpage structure and headings.</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS</td>
+                    <td>Practise styling text, sections, and navigation.</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Web Projects</td>
+                    <td>Build and test a small webpage.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- New: Skills / Projects section with expandable details -->
+    <section id="skills" class="content-section">
+        <h2>My Skills &amp; Projects</h2>
+        <p>Three things I have learned so far. Click a card to see more detail.</p>
+
+        <div class="project-list">
+            <article class="project-card">
+                <h3>Semantic HTML5</h3>
+                <p class="project-summary">Structuring my page with header, nav, main and footer.</p>
+                <button class="expand-btn" type="button" aria-expanded="false">Show details</button>
+                <div class="project-details" hidden>
+                    <p>In Activity 2 I arranged my page into clear sections with good
+                        headings, hence each part of my site has a clear purpose and is easier
+                        to locate.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Responsive CSS Layout</h3>
+                <p class="project-summary">Styling my page so it works on phones and computers.</p>
+                <button class="expand-btn" type="button" aria-expanded="false">Show details</button>
+                <div class="project-details" hidden>
+                    <p>I used a flexible layout for my photo gallery and a media query so
+                        my navigation and content stay readable and usable at narrow screen
+                        widths, without any sideways scrolling.</p>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Interactive JavaScript</h3>
+                <p class="project-summary">Adding form validation and interactive features.</p>
+                <button class="expand-btn" type="button" aria-expanded="false">Show details</button>
+                <div class="project-details" hidden>
+                    <p>For Activity 3 I wrote JavaScript to validate my contact form, build
+                        a Previous/Next photo gallery, add expandable cards like this one,
+                        and let visitors switch between light and dark themes.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="photos" class="content-section">
+        <h2>My Photos</h2>
+        <p>Here are some photos related to my hobbies and interests.</p>
+
+        <div class="gallery-viewer">
+            <button id="gallery-prev" class="gallery-btn" type="button" aria-label="Previous photo">&#8592; Previous</button>
+            <figure class="gallery-frame">
+                <img id="gallery-image" src="images/image-1.png" alt="Photo related to listening to music">
+                <figcaption id="gallery-caption">Music</figcaption>
+            </figure>
+            <button id="gallery-next" class="gallery-btn" type="button" aria-label="Next photo">Next &#8594;</button>
+        </div>
+        <p id="gallery-counter" class="gallery-counter">Photo 1 of 3</p>
+    </section>
+
+    <section id="media" class="content-section">
+        <h2>My Media</h2>
+
+        <h3>My Introduction Video</h3>
+        <video controls>
+            <source src="videos/video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <p>This video introduces me, my programme, and one web development skill I hope to learn.</p>
+        <p>
+            <strong>Video summary:</strong>
+            In this video, I introduce myself, talk about my programme, and explain one
+            web development skill I want to improve.
+        </p>
+
+        <h3>My Audio</h3>
+
+        <audio controls preload="metadata">
+            <source src="videos/voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <p>This audio recording gives a clear picture of me .</p>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2>Contact Me</h2>
+        <p><strong>Name:</strong> Hillary N. Nyumbu </p>
+        <p><strong>Student Number:</strong> 202503347</p>
+        <p><strong>Phone:</strong> 0975749933 / 0965880048</p>
+        <p>
+            <strong>Email:</strong>
+            <a href="nyumbuhillary@gmail.com">nyumbuhillary@gmail.com </a>@gmail.com</a>
+        </p>
+
+        <p class="form-note">This form is included for demonstration purposes and does not send information to a real server.</p>
+
+        <form id="contact-form" action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic">
+                    <option value="general">General enquiry</option>
+                    <option value="collaboration">Project collaboration</option>
+                    <option value="feedback">Feedback on this site</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div id="form-preview" class="form-preview" hidden></div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2026 Hillary N. Nyumbu . All rights reserved.</p>
+    <p>Mulungushi University - Web Technologies</p>
+    <p><a href="https://github.com/YOUR-USERNAME/myweb" target="_blank" rel="noopener">View Source on GitHub</a></p>
+</footer>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
